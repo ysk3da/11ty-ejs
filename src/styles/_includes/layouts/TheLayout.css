@@ -1,0 +1,13 @@
+.the-layout {
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  background-color: #f00;
+}
+main {
+  background-color: #0f0;
+}
+footer {
+  background-color: #00f;
+}

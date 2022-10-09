@@ -1,0 +1,13 @@
+<%
+// Basically ejs components recevies props as variable.
+if(typeof props === "undefined") {
+  const props = {
+    classNames: "string",
+  }
+}
+
+const classNames = props.classNames? props.classNames : "defaultClasses";
+%>
+<footer class="the-footer <%= classNames %>">
+フッターサンプル
+</footer>

@@ -1,0 +1,4 @@
+/**
+ * css import is deprecated, but this sample uses it.
+ */
+@import "./_includes/layouts/TheLayout.css";

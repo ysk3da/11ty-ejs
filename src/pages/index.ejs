@@ -1,0 +1,31 @@
+---
+layout: layouts/TheLayout.ejs
+title: TOPページ
+description: TOPページの概要
+bodyId: top
+bodyClassNames: top-page
+permalink: index.html
+date: 2022-10-08
+---
+<div>
+  <p>
+    src/_includes/layouts/*.ejs と src/pages/*.ejs
+    ファイル内では front matter による変数の受け渡しで対応する。
+  </p>
+  <p>
+    <%# date の内容を確認 %>
+    <%= date %>
+  </p>
+  <p>
+    <%# _data/sample.json からデータを取得 %>
+    <%= sample.hoge %>
+  </p>
+  <%
+  function test(buf) {
+    console.log({buf});
+  %>
+  <p>
+    ああああ
+    </p>
+  <% }; %>
+</div>

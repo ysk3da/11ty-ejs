@@ -1,0 +1,19 @@
+<%
+// Basically ejs components receive "props" as variable.
+if(typeof props === "undefined") {
+  const props = {
+    classNames: "string",
+  }
+}
+
+const classNames = props.classNames? props.classNames : "defaultClasses";
+%>
+<header class="the-header <%= classNames %>">
+ヘッダーサンプル
+<p>
+  ejs の include や njk の block では fornt matter が 11ty 標準で利用できないので、自分で変数を用意する必要があります。
+</p>
+<p>
+  In ejs include and njk block etc, font matter cannot be used in 11ty standard, so you need to prepare your own variables.
+</p>
+</header>
